@@ -1,5 +1,5 @@
 fun testaFuncionarios() {
-    val alex = Funcionarios("Alex", "111.111.111-11", 1000.0)
+    val alex = Analista("Alex", "111.111.111-11", 1000.0)
     val fran = Gerente("Fran", "222.222.222-22", 2000.0, "1234")
     val gui = Diretor("Gui", "333-333-333-33", 4000.0, "4321", 200.0)
     val maria = Analista("Maria", "444-444-444-44", 3000.0)

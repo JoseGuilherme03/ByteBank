@@ -6,5 +6,5 @@ fun testaAutenticacao() {
 
     sistema.entra(gerente, 1234)
     sistema.entra(diretor, 1234)
-    sistema.entra(cliente,1234)
+//    sistama.entra(cliente,1234)
 }

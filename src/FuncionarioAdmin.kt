@@ -3,9 +3,9 @@ abstract class FuncionarioAdmin(
     cpf: String,
     salario: Double,
     val senha: Int
-) :Funcionarios(nome,cpf,salario),Autenticavel{
+) :Funcionarios(nome,cpf,salario){
 
-    override fun autenticacao(senha: Int): Boolean {
+    fun autenticacao(senha: Int): Boolean {
         if(this.senha == senha){
             return true
         }

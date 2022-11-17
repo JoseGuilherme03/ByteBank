@@ -1,9 +1,19 @@
+import br.com.alura.modelo.Cliente
 import br.com.alura.modelo.ContaCorrente
 import br.com.alura.modelo.ContaPoupanca
+import br.com.alura.modelo.Endereco
 
 fun testaContasDiferentes() {
-    val contaCorrente = ContaCorrente("Alex", 1000)
-    val contaPoupanca = ContaPoupanca("Fran", 2000)
+    val contaCorrente = ContaCorrente(
+        Cliente(
+            "Alex",
+            "111.111.111-11",
+            1234,
+            Endereco("Rua Prefeito Miguel Tito Rosa", bairro = "Morro Grande")
+        ),
+        1000
+    )
+    val contaPoupanca = ContaPoupanca(Cliente("Alex","111.111.111-11",1234), 2000)
 
     contaPoupanca.deposita(1000.0)
     contaCorrente.deposita(1000.0)
@@ -27,4 +37,8 @@ fun testaContasDiferentes() {
     contaPoupanca.transfere(100.0, contaCorrente)
     println("Saldo poupança após tranferir para corrente: ${contaPoupanca.saldo}")
     println("Saldo corrente após a tranferência: ${contaCorrente.saldo}")
+
+    println()
+    println("Bairro do Alex: ${contaCorrente.titular.endereco.bairro}")
+    println("Rua do Alex: ${contaCorrente.titular.endereco.logradouro}")
 }

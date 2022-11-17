@@ -2,8 +2,8 @@ package br.com.alura.modelo
 
 class testaContaSalario {
     fun testaContaSalario() {
-        val alex = ContaSalario("Alex", 2000)
-        val fran = ContaCorrente("Fran", 3000)
+        val alex = ContaSalario(Cliente("Alex","111.111.111-11",4321), 2000)
+        val fran = ContaCorrente(Cliente("Fran","111.111.111-11",1234), 3000)
 
         fran.deposita(1000.0)
 

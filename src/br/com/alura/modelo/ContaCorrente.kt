@@ -1,6 +1,6 @@
 package br.com.alura.modelo
 
-class ContaCorrente(titular: String, numero: Int) : Conta(titular, numero), FazTransferencia {
+class ContaCorrente(titular: Cliente, numero: Int) : Conta(titular, numero), FazTransferencia {
     override fun saca(valor: Double){
         val valorComTaxa = valor + 0.1
         if (this.saldo >= valorComTaxa) {

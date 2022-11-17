@@ -1,3 +1,5 @@
+package br.com.alura.modelo
+
 class testaContaSalario {
     fun testaContaSalario() {
         val alex = ContaSalario("Alex", 2000)

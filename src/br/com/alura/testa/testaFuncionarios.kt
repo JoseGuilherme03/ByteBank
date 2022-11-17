@@ -1,3 +1,8 @@
+import br.com.alura.modelo.Analista
+import br.com.alura.modelo.CalculadoraBonificacao
+import br.com.alura.modelo.Diretor
+import br.com.alura.modelo.Gerente
+
 fun testaFuncionarios() {
     val alex = Analista("Alex", "111.111.111-11", 1000.0)
     val fran = Gerente("Fran", "222.222.222-22", 2000.0, 1234)

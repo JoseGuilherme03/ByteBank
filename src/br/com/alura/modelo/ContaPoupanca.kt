@@ -1,4 +1,6 @@
-class ContaPoupanca(titular: String, numero: Int) : Conta(titular, numero),FazTransferencia{
+package br.com.alura.modelo
+
+class ContaPoupanca(titular: String, numero: Int) : Conta(titular, numero), FazTransferencia {
     override fun saca(valor: Double) {
         if (this.saldo >= valor) {
             this.saldo -= valor

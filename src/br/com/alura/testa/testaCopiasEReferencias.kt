@@ -1,3 +1,6 @@
+import br.com.alura.modelo.ContaCorrente
+import br.com.alura.modelo.ContaPoupanca
+
 fun testaCopiasEReferencias() {
     val numeroX = 10
     var numeroY = numeroX

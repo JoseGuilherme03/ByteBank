@@ -1,8 +1,11 @@
-import br.com.alura.modelo.Gerente
+import br.com.alura.modelo.*
+import br.com.alura.testa.testaObjects
 
 fun main() {
-    testaContasDiferentes()
+    testaObjects()
 }
+
+
 
 
 

@@ -4,6 +4,17 @@ abstract class Conta(
     var titular: Cliente,
     val numero: Int
 ) {
+
+    companion object {
+        var total = 0
+            private set
+    }
+
+    init {
+        println("Criando conta...")
+        Companion.total ++
+    }
+
     var saldo = 0.0
         protected set
 

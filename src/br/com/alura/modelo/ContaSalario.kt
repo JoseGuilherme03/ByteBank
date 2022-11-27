@@ -6,4 +6,8 @@ class ContaSalario(titular:Cliente, numero:Int): Conta(titular,numero) {
                 this.saldo -= valor
             }
         }
+
+    override fun autenticacao(senha: Int): Boolean {
+        return titular.autenticacao(senha)
+    }
 }

@@ -3,7 +3,7 @@ package br.com.alura.modelo
 abstract class Conta(
     var titular: Cliente,
     val numero: Int
-) {
+): Autenticavel {
 
     companion object {
         var total = 0

@@ -29,12 +29,12 @@ fun testaContasDiferentes() {
     println("br.com.alura.modelo.Conta Corrente: ${contaCorrente.saldo}")
 
     println()
-    contaCorrente.transfere(100.0, contaPoupanca)
+    contaCorrente.transfere(100.0, contaPoupanca, 123)
     println("Saldo corrente após tranferir para poupança: ${contaCorrente.saldo}")
     println("Saldo poupança após a tranferência: ${contaPoupanca.saldo}")
 
     println()
-    contaPoupanca.transfere(100.0, contaCorrente)
+    contaPoupanca.transfere(100.0, contaCorrente, 123)
     println("Saldo poupança após tranferir para corrente: ${contaPoupanca.saldo}")
     println("Saldo corrente após a tranferência: ${contaCorrente.saldo}")
 
